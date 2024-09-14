@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Navbar</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @layer utilities {
+            .glow {
+                text-shadow: 0 0 10px rgba(0, 172, 224, 0.8), 0 0 20px rgba(0, 172, 224, 0.6);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <!-- Navbar -->
+    <header id="navbar" class=" fixed w-full top-0 left-0 z-50 text-white bg-black">
+        <nav class="container flex items-center justify-between h-16 sm:h-20 ">
+
+            <!-- Logo -->
+            <a href="#" class="font-Lobster sm:text-2xl">Portfolio</a>
+
+            <!-- Navigation Menu -->
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh]
+        w-full bg-cyan-950/80 backdrop-blur-sm flex items-center 
+        justify-center transition-all duration-300 lg:static lg:min-h-fit
+        lg:bg-transparent lg:w-auto ">
+
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li><a href="#Home" class="nav-link hover:text-cyan-400">Home</a></li>
+                    <li><a href="#about" class="nav-link hover:text-cyan-400">About</a></li>
+                    <li><a href="#education" class="nav-link hover:text-cyan-400">Education</a></li>
+                    <li><a href="#projects" class="nav-link hover:text-cyan-400">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="text-xl sm:text-3x1 cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section (Add padding to avoid navbar overlap) -->
+    <section id="Home" class="relative pt-28">
+        <div class="container py-10">
+            <div class="flex flex-col items-center gap-14 lg:flex-row mb-5">
+
+                <!-- Image Section -->
+                <div class="w-full relative lg:w-1/2 order-1 lg:order-2">
+                    <img src="img/my-img.jpeg" alt="home-img" class="rounded-lg shadow-lg ">
+                </div>
+
+                <!-- Text Content Section -->
+                <div class="home_data w-full space-y-5 lg:w-1/2 order-2 lg:order-1">
+                    <h1 class="text-cyan-400 text-3xl md:text-4xl xl:text-5xl font-bold mb-5 font-Lobster">Hello, I Am
+                        Nafih</h1>
+                    <h3 class="text-cyan-400 text-xl md:text-2xl xl:text-3xl font-bold mb-5">Front-End Developer</h3>
+
+                    <p class="text-cyan-400 lg:text-lg font-semibold">
+                        I’m a front-end developer specializing in building responsive, user-friendly websites. With a
+                        strong focus on clean design and efficient code, I create seamless web experiences using HTML,
+                        TailwindCSS, JavaScript, and modern frameworks. My goal is to turn ideas into visually appealing
+                        and interactive web applications.
+                    </p>
+
+                    <!-- Social Media Links -->
+                    <div class="flex items-center gap-5 text-2xl lg:text-3xl lg:pt-10 text-white">
+                        <a href="https://www.facebook.com/profile.php?id=100093973824735" target="_blank">
+                            <i class="hover:text-cyan-400 ri-facebook-fill hover:animate-scalingUp"></i>
+                        </a>
+                        <a href="https://github.com/abdunfih" target="_blank">
+                            <i class="hover:text-cyan-400 ri-github-fill hover:animate-scalingUp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nafih_pp_/" target="_blank">
+                            <i class="hover:text-cyan-400 ri-instagram-line hover:animate-scalingUp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdu-nafih-bba522279/" target="_blank">
+                            <i class="hover:text-cyan-400 ri-linkedin-fill hover:animate-scalingUp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-900 text-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <!-- About Me Text -->
+                <div>
+                    <h2 class="text-4xl font-bold mb-12 text-center lg:text-left text-cyan-500 font-Lobster">About Me
+                    </h2>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        As a self-taught front-end developer, I am passionate about creating innovative and engaging web
+                        experiences. With a strong foundation in HTML, Tailwind CSS, and JavaScript, I focus on building
+                        responsive, user-friendly websites that prioritize performance and aesthetics.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Through my personal projects, I have developed a keen understanding of web development best
+                        practices
+                        and continuously strive to enhance my skills by exploring new technologies and methodologies.
+                    </p>
+                    <a href="#contact"
+                        class="inline-block text-lg font-semibold bg-cyan-500 text-white py-3 px-8 rounded-full shadow-lg hover:bg-cyan-600 transition-all duration-300">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <!-- Experience Section -->
+                <div class=" mt-12 lg:mt-0">
+                    <h3 class="text-4xl font-bold mb-12 text-center lg:text-left text-cyan-500 font-Lobster">My Journey
+                    </h3>
+                    <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
+                        <div
+                            class="bg-gray-800 p-8 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                            <h4 class="text-2xl font-semibold text-cyan-500 mb-4">Learning Journey</h4>
+                            <p class="text-gray-300 leading-relaxed">
+                                My journey in web development began with self-study and experimentation. I immersed
+                                myself in
+                                HTML, CSS, and JavaScript, building various projects to apply my knowledge and gain
+                                practical
+                                experience.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-gray-800 p-8 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                            <h4 class="text-2xl font-semibold text-cyan-500 mb-4">Ongoing Development</h4>
+                            <p class="text-gray-300 leading-relaxed">
+                                I am continually working on enhancing my skills through personal projects and exploring
+                                new
+                                technologies. My goal is to stay updated with industry trends and deliver high-quality
+                                web
+                                solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 bg-gray-900 relative">
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-4xl font-bold glow text-center text-cyan-300 mb-12">Education</h2>
+
+            <div class="relative border-l-4 border-cyan-500">
+                <!-- Education Item 1 -->
+                <div class="mb-10 ml-8">
+                    <div class="absolute w-6 h-6 bg-cyan-500 rounded-full left-[-15px] top-0"></div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg  ring-4 hover:ring-cyan-500">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Plus Two</h3>
+                        <p class="text-gray-400">DUHSS panakkad</p>
+                        <p class="text-gray-500">2021 - 2023</p>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="mb-10 ml-8">
+                    <div class="absolute w-6 h-6 bg-cyan-500 rounded-full left-[-15px] top-44"></div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg  ring-4 hover:ring-cyan-500">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Flutter Course</h3>
+                        <p class="text-gray-400">Edapt (6-month course)</p>
+                        <p class="text-gray-500">2023</p>
+                    </div>
+                </div>
+
+                <!-- Education Item 3 -->
+                <div class="mb-10 ml-8">
+                    <div class="absolute w-6 h-6 bg-cyan-500 rounded-full left-[-15px] bottom-28"></div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg ring-4 hover:ring-cyan-500">
+                        <h3 class="text-2xl font-semibold text-white mb-2">BCA</h3>
+                        <p class="text-gray-400">IGNOU University (First Year)</p>
+                        <p class="text-gray-500">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-800 relative">
+        <div class="container mx-auto px-4">
+            <div class="w-72 h-72 bg-cyan-500 rounded-full blur-3xl -z-10
+            opacity-30 absolute top-1/2 left-1/2 -translate-x-1/2 
+            -translate-y-1/2"></div>
+            <div class="w-72 h-72 bg-cyan-500 rounded-full blur-3xl -z-10
+            opacity-30 absolute right-0 bottom-0"></div>
+            <h3 class="text-3xl font-bold glow text-center text-cyan-300 mb-12">Projects</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <!-- Project 1 -->
+                <div
+                    class="relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="img/financial-website.png" alt="Financial Website" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-white mb-2">Financial Website</h4>
+                        <p class="text-gray-400 mb-4">A modern, responsive financial website with a clean UI.</p>
+                        <a href="https://abdunfih.github.io/tailwind-website/" target="_blank"
+                            class="inline-block bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="img/plant.png" alt="Plant E-commerce Website" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-white mb-2">Plant E-commerce Website</h4>
+                        <p class="text-gray-400 mb-4">An e-commerce website for plants with smooth navigation.</p>
+                        <a href="https://abdunfih.github.io/plant-website/" target="_blank"
+                            class="inline-block bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="img/foodwebsi.png" alt="Food E-commerce Website" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-white mb-2">Food E-commerce Website</h4>
+                        <p class="text-gray-400 mb-4">A responsive website for online food shopping with an engaging
+                            UI.
+                        </p>
+                        <a href="https://abdunfih.github.io/food-website/" target="_blank"
+                            class="inline-block bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">View
+                            Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-100 mb-4">Skills</h2>
+                <p class="text-gray-400 text-lg">Technologies & tools I use to build responsive, high-performance
+                    websites and apps.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- HTML Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                            alt="HTML5 Logo" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">HTML</h3>
+                    <p class="text-gray-300 text-center">Proficient in creating semantic, accessible web pages with
+                        HTML.</p>
+                </div>
+
+                <!-- CSS Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                            alt="CSS3 Logo" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">CSS</h3>
+                    <p class="text-gray-300 text-center">Experienced in styling web pages with CSS, including responsive
+                        design.</p>
+                </div>
+
+                <!-- Tailwind CSS Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                            alt="Tailwind CSS Logo" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">Tailwind CSS</h3>
+                    <p class="text-gray-300 text-center">Skilled in using Tailwind CSS for utility-first styling and
+                        rapid design.</p>
+                </div>
+
+                <!-- JavaScript Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                            alt="JavaScript Logo" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">JavaScript</h3>
+                    <p class="text-gray-300 text-center">Strong understanding of JavaScript for creating dynamic web
+                        applications.</p>
+                </div>
+
+                <!-- Flutter Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="img/flutter-logo.png"
+                            alt="Flutter Logo" class="w-14 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">Flutter</h3>
+                    <p class="text-gray-300 text-center">Proficient in building cross-platform mobile applications using
+                        Flutter.</p>
+                </div>
+
+                <!-- Dart Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart Logo"
+                            class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">Dart</h3>
+                    <p class="text-gray-300 text-center">Basic understanding of Dart for developing Flutter
+                        applications.</p>
+                </div>
+
+                <!-- C Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo"
+                            class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">C</h3>
+                    <p class="text-gray-300 text-center">Basic understanding of C programming for system-level
+                        development.</p>
+                </div>
+
+                <!-- Java Card -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center justify-center mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+                            alt="Java Logo" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">Java</h3>
+                    <p class="text-gray-300 text-center">Basic understanding of Java for general programming and
+                        application development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
