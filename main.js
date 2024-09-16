@@ -17,21 +17,25 @@ navLink.forEach(link => {
 })
 
 
-window.addEventListener('scroll', scrollHeader);
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollUpBtn = document.getElementById('scroll-up');
 
-// scrollUp
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            scrollUpBtn.classList.remove('-bottom-1/2');
+            scrollUpBtn.classList.add('bottom-4');
+        } else {
+            scrollUpBtn.classList.add('-bottom-1/2');
+            scrollUpBtn.classList.remove('bottom-4');
+        }
+    });
 
-const scrollUp = () => {
-    const scrollUpBtn = document.getElementById("scroll-up");
-
-    if (this.scrollY >= 50) {
-        scrollUpBtn.classList.remove("-bottom-1/2");
-        scrollUpBtn.classList.add("bottom-4");
-    } else {
-        scrollUpBtn.classList.add("-bottom-1/2");
-        scrollUpBtn.classList.remove("bottom-4");
-    }
-};
-
-window.addEventListener('scroll', scrollUp);
+    scrollUpBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
 

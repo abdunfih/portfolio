@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        #scroll-up {
+            display: none;
+            /* Initially hidden */
+        }
+
+        #scroll-up.bottom-4 {
+            display: block;
+            bottom: 1rem;
+            /* Adjust as needed */
+        }
+
         @layer utilities {
             .glow {
                 text-shadow: 0 0 10px rgba(0, 172, 224, 0.8), 0 0 20px rgba(0, 172, 224, 0.6);
@@ -446,8 +457,10 @@
         </div>
     </footer>
 
-    <a href="#" class="fixed right-4 -bottom-1/2 bg-cyan-500 shadow-sm inline-block px-3 py-1 md:py-2 md:px-4 rounded-md text-lg
-    z-50 hover:translate-y-1 ease-in duration-200" id="scroll-up">
+
+    <!-- Scroll-to-Top Button -->
+    <a href="#" id="scroll-up"
+        class="fixed right-4 -bottom-1/2 bg-cyan-500 shadow-sm inline-block px-3 py-1 md:py-2 md:px-4 rounded-md text-lg z-50 hover:translate-y-1 ease-in duration-200">
         <i class="ri-arrow-up-line"></i>
     </a>
 
