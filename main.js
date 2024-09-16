@@ -1,14 +1,3 @@
-// Mobile Menu Toggle
-// const menuToggle = document.getElementById('menu-toggle');
-// const mobileMenu = document.getElementById('mobile-menu');
-// const hamburgerIcon = document.getElementById('hamburger-icon');
-// const closeIcon = document.getElementById('close-icon');
-
-// menuToggle.addEventListener('click', () => {
-//     mobileMenu.classList.toggle('hidden'); // Toggle menu visibility
-//     hamburgerIcon.classList.toggle('hidden'); // Toggle hamburger icon
-//     closeIcon.classList.toggle('hidden'); // Toggle close icon
-// });
 
 const navMenu = document.getElementById("nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -28,21 +17,21 @@ navLink.forEach(link => {
 })
 
 
-// Basic Typing Effect (Optional if needed for typewriter text)
-const textArray = ["Web Developer"];
-let arrayIndex = 0;
-let charIndex = 0;
-const typingSpeed = 100;
-const typewriterText = document.getElementById('typewriter-text');
+window.addEventListener('scroll', scrollHeader);
 
-function typeEffect() {
-    if (charIndex < textArray[arrayIndex].length) {
-        typewriterText.innerHTML += textArray[arrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeEffect, typingSpeed);
+// scrollUp
+
+const scrollUp = () => {
+    const scrollUpBtn = document.getElementById("scroll-up");
+
+    if (this.scrollY >= 50) {
+        scrollUpBtn.classList.remove("-bottom-1/2");
+        scrollUpBtn.classList.add("bottom-4");
+    } else {
+        scrollUpBtn.classList.add("-bottom-1/2");
+        scrollUpBtn.classList.remove("bottom-4");
     }
-}
+};
 
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(typeEffect, typingSpeed); // Start the typing animation
-});
+window.addEventListener('scroll', scrollUp);
+

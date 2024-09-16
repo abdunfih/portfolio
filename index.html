@@ -36,7 +36,8 @@
                     <li><a href="#Home" class="nav-link hover:text-cyan-400">Home</a></li>
                     <li><a href="#about" class="nav-link hover:text-cyan-400">About</a></li>
                     <li><a href="#education" class="nav-link hover:text-cyan-400">Education</a></li>
-                    <li><a href="#projects" class="nav-link hover:text-cyan-400">Projects</a></li>
+                    <li><a href="#project" class="nav-link hover:text-cyan-400">Projects</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-cyan-400">Contact</a></li>
                 </ul>
             </div>
 
@@ -92,7 +93,9 @@
 
     <section id="about" class="py-20 bg-gray-900 text-gray-100">
         <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-20">About Me</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
                 <!-- About Me Text -->
                 <div>
                     <h2 class="text-4xl font-bold mb-12 text-center lg:text-left text-cyan-500 font-Lobster">About Me
@@ -107,7 +110,7 @@
                         practices
                         and continuously strive to enhance my skills by exploring new technologies and methodologies.
                     </p>
-                    <a href="#contact"
+                    <a href="#project"
                         class="inline-block text-lg font-semibold bg-cyan-500 text-white py-3 px-8 rounded-full shadow-lg hover:bg-cyan-600 transition-all duration-300">
                         Get in Touch
                     </a>
@@ -153,7 +156,7 @@
     <section id="education" class="py-24 bg-gray-900 relative">
         <div class="container mx-auto px-4">
 
-            <h2 class="text-4xl font-bold glow text-center text-cyan-300 mb-12">Education</h2>
+            <h2 class="text-4xl font-bold text-center text-gray-100 mb-12">Education</h2>
 
             <div class="relative border-l-4 border-cyan-500">
                 <!-- Education Item 1 -->
@@ -191,14 +194,14 @@
 
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-800 relative">
+    <section id="project" class="py-16 bg-gray-800 relative">
         <div class="container mx-auto px-4">
             <div class="w-72 h-72 bg-cyan-500 rounded-full blur-3xl -z-10
             opacity-30 absolute top-1/2 left-1/2 -translate-x-1/2 
             -translate-y-1/2"></div>
             <div class="w-72 h-72 bg-cyan-500 rounded-full blur-3xl -z-10
             opacity-30 absolute right-0 bottom-0"></div>
-            <h3 class="text-3xl font-bold glow text-center text-cyan-300 mb-12">Projects</h3>
+            <h3 class="text-3xl font-bold text-center text-gray-100 mb-12">Projects</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
                 <!-- Project 1 -->
@@ -302,8 +305,7 @@
                 <!-- Flutter Card -->
                 <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
                     <div class="flex items-center justify-center mb-6">
-                        <img src="img/flutter-logo.png"
-                            alt="Flutter Logo" class="w-14 h-16">
+                        <img src="img/flutter-logo.png" alt="Flutter Logo" class="w-14git h-16">
                     </div>
                     <h3 class="text-2xl font-semibold text-cyan-500 mb-2 text-center">Flutter</h3>
                     <p class="text-gray-300 text-center">Proficient in building cross-platform mobile applications using
@@ -345,6 +347,109 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact Section (Dark Theme) -->
+    <section id="contact" class="py-24 bg-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-100 mb-4 ">Contact Me</h2>
+                <p class="text-lg text-gray-400">Have questions or want to work together? Reach out!</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-gray-800 shadow-xl rounded-lg p-8">
+                <form method="POST" class="space-y-6">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full px-4 py-3 bg-gray-700 text-gray-200 placeholder-gray-400 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition duration-200"
+                            required>
+
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full px-4 py-3 bg-gray-700 text-gray-200 placeholder-gray-400 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition duration-200"
+                            required>
+                    </div>
+
+                    <textarea name="message" rows="5" placeholder="Your Message"
+                        class="w-full px-4 py-3 bg-gray-700 text-gray-200 placeholder-gray-400 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition duration-200"
+                        required></textarea>
+
+                    <button type="submit"
+                        class="w-full bg-cyan-500 text-white py-3 px-6 text-lg font-semibold rounded-lg hover:bg-cyan-600 transition-all duration-300">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+        <div class="container mx-auto px-6 lg:px-0 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- About Section -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Follow Me</h3>
+                <p class="text-lg mb-4">
+                    A dedicated front-end developer with a knack for creating seamless user experiences and elegant
+                    designs.
+                </p>
+                <div class="flex space-x-4 mt-4 text-xl">
+                    <a href="https://github.com/abdunfih" target="_blank" class="hover:text-cyan-500">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdu-nafih-bba522279/" target="_blank"
+                        class="hover:text-cyan-500">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nafih_pp_/" target="_blank" class="hover:text-cyan-500">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-cyan-500">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Links Section -->
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-cyan-500">Home</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Projects</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">About</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Services</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Section -->
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-cyan-500">Web Design</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Front-End Development</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">UI/UX Design</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Contact Info</h4>
+                <p>Email: <a href="mailto:example@gmail.com" class="hover:text-cyan-500">abdunafipp@gmail.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+            <p>&copy; 2024 Nafih. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-cyan-500 shadow-sm inline-block px-3 py-1 md:py-2 md:px-4 rounded-md text-lg
+    z-50 hover:translate-y-1 ease-in duration-200" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
 
 
