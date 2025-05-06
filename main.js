@@ -1,21 +1,23 @@
-
 const navMenu = document.getElementById("nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".nav-link");
 const hamburger = document.getElementById("hamburger");
 
 hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("left-[0]")
-    hamburger.classList.toggle('ri-close-large-line')
-})
+    navMenu.classList.toggle("left-0"); // Fix transition issue
+    navMenu.classList.toggle("left-[-100%]");
+    hamburger.classList.toggle("ri-close-large-line");
+    hamburger.classList.toggle("ri-menu-4-line");
+});
 
-
-navLink.forEach(link => {
+// Close menu when a link is clicked
+navLinks.forEach(link => {
     link.addEventListener("click", () => {
-        navMenu.classList.toggle("left-[0]")
-        hamburger.classList.toggle('ri-close-large-line')
-    })
-})
-
+        navMenu.classList.add("left-[-100%]"); // Ensure menu hides
+        navMenu.classList.remove("left-0");
+        hamburger.classList.add("ri-menu-4-line");
+        hamburger.classList.remove("ri-close-large-line");
+    });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollUpBtn = document.getElementById('scroll-up');
@@ -38,4 +40,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
 

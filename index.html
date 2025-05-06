@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio Navbar</title>
     <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         #scroll-up {
@@ -39,9 +40,9 @@
 
             <!-- Navigation Menu -->
             <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh]
-        w-full bg-cyan-950/80 backdrop-blur-sm flex items-center 
-        justify-center transition-all duration-300 lg:static lg:min-h-fit
-        lg:bg-transparent lg:w-auto ">
+                 w-full bg-cyan-950/80 backdrop-blur-sm flex items-center 
+                 justify-center transition-all duration-300 lg:static lg:min-h-fit
+                 lg:bg-transparent lg:w-auto ">
 
                 <ul class="flex flex-col items-center gap-8 lg:flex-row">
                     <li><a href="#Home" class="nav-link hover:text-cyan-400">Home</a></li>
@@ -65,12 +66,12 @@
             <div class="flex flex-col items-center gap-14 lg:flex-row mb-5">
 
                 <!-- Image Section -->
-                <div class="w-full relative lg:w-1/2 order-1 lg:order-2">
+                <div class="about_img w-full relative lg:w-1/2 order-1 lg:order-2">
                     <img src="img/my-img.jpeg" alt="home-img" class="rounded-lg shadow-lg ">
                 </div>
 
                 <!-- Text Content Section -->
-                <div class="home_data w-full space-y-5 lg:w-1/2 order-2 lg:order-1">
+                <div class="home_img w-full space-y-5 lg:w-1/2 order-2 lg:order-1">
                     <h1 class="text-cyan-400 text-3xl md:text-4xl xl:text-5xl font-bold mb-5 font-Lobster">Hello, I Am
                         Nafih</h1>
                     <h3 class="text-cyan-400 text-xl md:text-2xl xl:text-3xl font-bold mb-5">Front-End Developer</h3>
@@ -103,12 +104,12 @@
     </section>
 
     <section id="about" class="py-20 bg-gray-900 text-gray-100">
-        <div class="container mx-auto px-6">
+        <div class="home_data container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-gray-100 mb-20">About Me</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
                 <!-- About Me Text -->
-                <div>
+                <div class="about_data">
                     <h2 class="text-4xl font-bold mb-12 text-center lg:text-left text-cyan-500 font-Lobster">About Me
                     </h2>
                     <p class="text-lg text-gray-300 leading-relaxed mb-6">
@@ -128,7 +129,7 @@
                 </div>
 
                 <!-- Experience Section -->
-                <div class=" mt-12 lg:mt-0">
+                <div class="about_iamge mt-12 lg:mt-0">
                     <h3 class="text-4xl font-bold mb-12 text-center lg:text-left text-cyan-500 font-Lobster">My Journey
                     </h3>
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
@@ -167,9 +168,9 @@
     <section id="education" class="py-24 bg-gray-900 relative">
         <div class="container mx-auto px-4">
 
-            <h2 class="text-4xl font-bold text-center text-gray-100 mb-12">Education</h2>
+            <h2 class="home_data text-4xl font-bold text-center text-gray-100 mb-12">Education</h2>
 
-            <div class="relative border-l-4 border-cyan-500">
+            <div class="relative border-l-4 border-cyan-500 about_img">
                 <!-- Education Item 1 -->
                 <div class="mb-10 ml-8">
                     <div class="absolute w-6 h-6 bg-cyan-500 rounded-full left-[-15px] top-0"></div>
@@ -212,12 +213,12 @@
             -translate-y-1/2"></div>
             <div class="w-72 h-72 bg-cyan-500 rounded-full blur-3xl -z-10
             opacity-30 absolute right-0 bottom-0"></div>
-            <h3 class="text-3xl font-bold text-center text-gray-100 mb-12">Projects</h3>
+            <h3 class="text-3xl font-bold text-center text-gray-100 mb-12 home_img">Projects</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
                 <!-- Project 1 -->
                 <div
-                    class="relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    class="about_data relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                     <img src="img/financial-website.png" alt="Financial Website" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-white mb-2">Financial Website</h4>
@@ -230,7 +231,7 @@
 
                 <!-- Project 2 -->
                 <div
-                    class="relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    class="about_image relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                     <img src="img/plant.png" alt="Plant E-commerce Website" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-white mb-2">Plant E-commerce Website</h4>
@@ -243,7 +244,7 @@
 
                 <!-- Project 3 -->
                 <div
-                    class="relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    class="about_data relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                     <img src="img/foodwebsi.png" alt="Food E-commerce Website" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-white mb-2">Food E-commerce Website</h4>
@@ -256,6 +257,21 @@
                     </div>
                 </div>
 
+                <!-- Project 4 -->
+                <div
+                    class="about_data relative bg-gray-700 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="img/ignore.jpg" alt="Food E-commerce Website" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-white mb-2">Food E-commerce Website</h4>
+                        <p class="text-gray-400 mb-4">A responsive website for online food shopping with an engaging
+                            UI.
+                        </p>
+                        <a href="https://abdunfih.github.io/interno/" target="_blank"
+                            class="inline-block bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">View
+                            Project</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -263,14 +279,15 @@
     <!-- Skills Section -->
     <section id="skills" class="py-24 bg-gray-900">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12 home_img">
                 <h2 class="text-4xl font-bold text-gray-100 mb-4">Skills</h2>
                 <p class="text-gray-400 text-lg">Technologies & tools I use to build responsive, high-performance
                     websites and apps.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
                 <!-- HTML Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
                             alt="HTML5 Logo" class="w-16 h-16">
@@ -281,7 +298,8 @@
                 </div>
 
                 <!-- CSS Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
                             alt="CSS3 Logo" class="w-16 h-16">
@@ -292,7 +310,8 @@
                 </div>
 
                 <!-- Tailwind CSS Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
                             alt="Tailwind CSS Logo" class="w-16 h-16">
@@ -303,7 +322,8 @@
                 </div>
 
                 <!-- JavaScript Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
                             alt="JavaScript Logo" class="w-16 h-16">
@@ -314,7 +334,8 @@
                 </div>
 
                 <!-- Flutter Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="img/flutter-logo.png" alt="Flutter Logo" class="w-14git h-16">
                     </div>
@@ -324,7 +345,8 @@
                 </div>
 
                 <!-- Dart Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart Logo"
                             class="w-16 h-16">
@@ -335,7 +357,8 @@
                 </div>
 
                 <!-- C Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo"
                             class="w-16 h-16">
@@ -346,7 +369,8 @@
                 </div>
 
                 <!-- Java Card -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                <div
+                    class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 popular_card">
                     <div class="flex items-center justify-center mb-6">
                         <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
                             alt="Java Logo" class="w-16 h-16">
@@ -362,8 +386,8 @@
     <!-- Contact Section (Dark Theme) -->
     <section id="contact" class="py-24 bg-gray-900">
         <div class="container mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-100 mb-4 ">Contact Me</h2>
+            <div class="text-center mb-12 home_img">
+                <h2 class="text-4xl font-bold text-gray-100 mb-4">Contact Me</h2>
                 <p class="text-lg text-gray-400">Have questions or want to work together? Reach out!</p>
             </div>
 
@@ -464,9 +488,62 @@
         <i class="ri-arrow-up-line"></i>
     </a>
 
-
-
     <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script>
+
+        const sr = ScrollReveal({
+            origin: 'top', distance: '50px', duration: 1000, delay: 200, easing: 'ease-in-out'
+        });
+
+        sr.reveal('.home_data');
+        sr.reveal('.home_img', { delay: 500, scale: 0.4 });
+
+        sr.reveal('.popular_card', { Interval: 50 });
+
+        sr.reveal('.about_data', { origin: "right" });
+        sr.reveal('.about_image', { origin: "left" });
+        sr.reveal('.about_img', { delay: 500, scale: 0.4, origin: "left" });
+
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnIntereaction: false,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            grabCursor: true,
+
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
